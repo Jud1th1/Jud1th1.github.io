@@ -38,12 +38,12 @@ body::before {
 }
 
 a {
-  color: red;
+  color: var(--links-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: var(--hover-color);
   text-decoration: none;
 }
 
