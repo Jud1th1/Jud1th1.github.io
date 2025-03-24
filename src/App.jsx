@@ -5,12 +5,22 @@ function App() {
     <div className="min-h-screen bg-white text-gray-900 font-serif">
      
       {/* Navbar */}
-      <nav className="w-full fixed top-0 bg-purple-900 text-white px-6 py-4 flex justify-between items-center z-50 shadow-md">
+      <nav className="w-full fixed top-0 bg-purple-900 text-white px-6 py-4 flex items-center justify-between z-50 shadow-md">
+        {/* Left: Logo */}
+        <div className="flex items-center">
+          <img src={logo} alt="assets/images/logo1.png" className="h-10 w-auto mr-4" />
+        </div>
+
+
+        {/* Center: Nav Links */}
         <ul className="flex gap-6 font-light">
           <li><a href="#about" className="hover:text-purple-300">About</a></li>
           <li><a href="#projects" className="hover:text-purple-300">Projects</a></li>
           <li><a href="#contact" className="hover:text-purple-300">Contact</a></li>
         </ul>
+
+        {/* Right: (Optional for spacing symmetry) */}
+        <div className="w-1/3"></div>
       </nav>
 
       <section className="min-h-[70vh] flex flex-col justify-center items-center text-center bg-[#2c1244] text-white px-6">
