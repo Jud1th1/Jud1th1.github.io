@@ -4,30 +4,82 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-serif">
      
-      {/* Navbar */}
-      <nav className="w-full fixed top-0 bg-purple-900 text-white px-6 py-4 flex items-center justify-between z-50 shadow-md">
-        {/* Left: Logo */}
-        <div className="flex items-center">
-          <img src={logo} alt="assets/images/logo1.png" className="h-10 w-auto mr-4" />
-        </div>
+  {/* Navbar */}
+  <nav className="w-full fixed top-0 bg-purple-900 text-white px-6 py-4 flex justify-between items-center z-50 shadow-judith">
+  {/* Left: Logo */}
+  <div className="flex items-center gap-2">
+    <img
+      src="/assets/images/whiteSignatureLogo.png"
+      alt="Judith's Logo"
+      className="h-10 w-auto transition-transform duration-300 hover:scale-105 cursor-pointer"
+    />
+  </div>
+
+  {/* Center: Nav Links */}
+  <ul className="flex gap-6 font-light text-lg mx-auto absolute left-1/2 transform -translate-x-1/2">
+    <li>
+      <a href="#" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
+          after:content-[''] after:absolute after:left-0 after:bottom-0
+          after:w-0 after:h-[3px] after:bg-purple-300 
+          after:transition-all after:duration-300 hover:after:w-full">
+        Home
+      </a>
+    </li>
+    <li>
+     <a href="#about" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
+          after:content-[''] after:absolute after:left-0 after:bottom-0
+          after:w-0 after:h-[3px] after:bg-purple-300 
+          after:transition-all after:duration-300 hover:after:w-full">
+        About
+      </a>
+    </li>
+    <li>
+      <a href="#projects" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
+          after:content-[''] after:absolute after:left-0 after:bottom-0
+          after:w-0 after:h-[3px] after:bg-purple-300 
+          after:transition-all after:duration-300 hover:after:w-full">
+        Projects
+      </a>
+    </li>
+    <li>
+      <a href="#contact" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
+          after:content-[''] after:absolute after:left-0 after:bottom-0
+          after:w-0 after:h-[3px] after:bg-purple-300 
+          after:transition-all after:duration-300 hover:after:w-full">
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
+
+{/* Hero Section */}
+<section
+  className="relative min-h-[100vh] bg-cover bg-center flex flex-col justify-center items-center text-center text-white px-6"
+  style={{ backgroundImage: "url('/assets/images/bkgd1.png')" }}
+>
+  <div className="bg-black bg-opacity-40 absolute inset-0 z-0"></div>
+
+  <div className="relative z-10">
+    <h1 className="text-5xl font-bold font-sans mb-4">Judith Jean-Francois</h1>
+    <p className="text-xl font-light max-w-xl">
+      Front-End Developer crafting elegant, accessible, and joyful web experiences 💜
+    </p>
+    <a
+      href="#projects"
+      className="mt-6 inline-block bg-[#7e61ae] hover:bg-[#a6a0dc] text-white py-2 px-6 rounded-full transition duration-300"
+    >
+      View My Work
+    </a>
+  </div>
+</section>
+
+<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+  <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-1 animate-bounce">
+    <div className="w-1 h-2 bg-white rounded-full"></div>
+  </div>
+</div>
 
 
-        {/* Center: Nav Links */}
-        <ul className="flex gap-6 font-light">
-          <li><a href="#about" className="hover:text-purple-300">About</a></li>
-          <li><a href="#projects" className="hover:text-purple-300">Projects</a></li>
-          <li><a href="#contact" className="hover:text-purple-300">Contact</a></li>
-        </ul>
-
-        {/* Right: (Optional for spacing symmetry) */}
-        <div className="w-1/3"></div>
-      </nav>
-
-      <section className="min-h-[70vh] flex flex-col justify-center items-center text-center bg-[#2c1244] text-white px-6">
-        <h1 className="text-5xl font-bold font-sans mb-4">Judith Jean-Francois</h1>
-        <p className="text-xl font-light max-w-xl">Front-End Developer crafting elegant, accessible, and joyful web experiences 💜</p>
-        <a href="#projects" className="mt-6 inline-block bg-[#7e61ae] hover:bg-[#a6a0dc] text-white py-2 px-6 rounded-full transition duration-300">View My Work</a>
-      </section>
 
     {/* Main Content */}
     <main className="px-6 py-12 max-w-4xl mx-auto">

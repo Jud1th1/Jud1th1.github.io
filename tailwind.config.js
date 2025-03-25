@@ -17,8 +17,12 @@ export default {
           heading: ["Raleway", "sans-serif"],
           body: ["Cormorant", "serif"],
         },
+        boxShadow: {
+          judith: '0 6px 12px rgba(126, 97, 174, 0.3)', // purple-y glow
+        }
       },
     },
     plugins: [],
+    
   }
   
