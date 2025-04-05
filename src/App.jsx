@@ -5,57 +5,31 @@ function App() {
     <div className="min-h-screen bg-white text-gray-900 font-serif">
      
   {/* Navbar */}
-  <nav className="w-full fixed top-0 bg-purple-900 text-white px-6 py-4 flex justify-between items-center z-50 shadow-judith">
-  {/* Left: Logo */}
+  <nav className="bg-white text-[#2c1244] px-8 py-4 shadow-md fixed w-full z-50 flex justify-between items-center">
+  {/* Logo Left */}
   <div className="flex items-center gap-2">
-    <img
-      src="/assets/images/whiteSignatureLogo.png"
-      alt="Judith's Logo"
-      className="h-10 w-auto transition-transform duration-300 hover:scale-105 cursor-pointer"
-    />
+    <img src="/assets/logo.png" alt="Judith logo" className="h-8 w-auto" />
   </div>
 
-  {/* Center: Nav Links */}
-  <ul className="flex gap-6 font-light text-lg mx-auto absolute left-1/2 transform -translate-x-1/2">
-    <li>
-      <a href="#" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
-          after:content-[''] after:absolute after:left-0 after:bottom-0
-          after:w-0 after:h-[3px] after:bg-purple-300 
-          after:transition-all after:duration-300 hover:after:w-full">
-        Home
-      </a>
-    </li>
-    <li>
-     <a href="#about" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
-          after:content-[''] after:absolute after:left-0 after:bottom-0
-          after:w-0 after:h-[3px] after:bg-purple-300 
-          after:transition-all after:duration-300 hover:after:w-full">
-        About
-      </a>
-    </li>
-    <li>
-      <a href="#projects" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
-          after:content-[''] after:absolute after:left-0 after:bottom-0
-          after:w-0 after:h-[3px] after:bg-purple-300 
-          after:transition-all after:duration-300 hover:after:w-full">
-        Projects
-      </a>
-    </li>
-    <li>
-      <a href="#contact" className="relative inline-block pb-1 text-white hover:text-purple-300 transition-colors duration-300
-          after:content-[''] after:absolute after:left-0 after:bottom-0
-          after:w-0 after:h-[3px] after:bg-purple-300 
-          after:transition-all after:duration-300 hover:after:w-full">
-        Contact
-      </a>
-    </li>
+  {/* Center Nav Links */}
+  <ul className="flex gap-8 text-lg font-medium">
+    <li><a href="#home" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">Home</a></li>
+    <li><a href="#about" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">About</a></li>
+    <li><a href="#projects" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">Projects</a></li>
+    <li><a href="#contact" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">Contact</a></li>
   </ul>
+
+  {/* Dark Mode Toggle (placeholder) */}
+  <div className="ml-4">
+    <button className="text-xl">🌙</button>
+  </div>
 </nav>
+
 
 {/* Hero Section */}
 <section
   className="relative min-h-[100vh] bg-cover bg-center flex flex-col justify-center items-center text-center text-white px-6"
-  style={{ backgroundImage: "url('/assets/images/bkgd1.png')" }}
+  style={{ backgroundImage: "url('https://img.freepik.com/premium-vector/leaf-pattern-gray-background-vector_53876-166500.jpg?w=740')" }}
 >
   <div className="bg-black bg-opacity-40 absolute inset-0 z-0"></div>
 
