@@ -31,8 +31,10 @@ function App() {
   className="relative min-h-[100vh] bg-cover bg-center flex flex-col justify-center items-center text-center text-white px-6"
   style={{ backgroundImage: "url('https://img.freepik.com/premium-vector/leaf-pattern-gray-background-vector_53876-166500.jpg?w=740')" }}
 >
+  {/* Overlay */}
   <div className="bg-black bg-opacity-40 absolute inset-0 z-0"></div>
 
+  {/* Hero Content */}
   <div className="relative z-10">
     <h1 className="text-5xl font-bold font-sans mb-4">Judith Jean-Francois</h1>
     <p className="text-xl font-light max-w-xl">
@@ -45,14 +47,14 @@ function App() {
       View My Work
     </a>
   </div>
-</section>
 
-<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-  <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-1 animate-bounce">
-    <div className="w-1 h-2 bg-white rounded-full"></div>
+  {/* 🖱️ Scroll Indicator */}
+  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
+    <div className="w-[28px] h-[48px] border-2 border-purple-300 shadow-[0_0_10px_#7e61ae] rounded-full flex justify-center items-start p-1 relative">
+      <div className="w-[4px] h-[8px] bg-white rounded-full animate-scrollPulse"></div>
+    </div>
   </div>
-</div>
-
+</section>
 
 
     {/* Main Content */}

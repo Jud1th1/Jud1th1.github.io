@@ -12,3 +12,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes scrollPulse {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+}
+
+.animate-scrollPulse {
+  animation: scrollPulse 1.5s infinite;
+}
