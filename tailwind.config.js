@@ -31,10 +31,15 @@ export default {
             '0%, 100%': { transform: 'translateY(0)', opacity: '0.5' },
             '50%': { transform: 'translateY(10px)', opacity: '1' },
           },
+          fadeInUp: {
+            '0%': { opacity: '0', transform: 'translateY(20px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          },
         },
         animation: {
           pulseDot: 'pulseDot 1.5s ease-in-out infinite',
           scrollPulse: 'scrollPulse 1.5s ease-in-out infinite',
+          fadeInUp: 'fadeInUp 1s ease-out forwards',
         },
       },
     },

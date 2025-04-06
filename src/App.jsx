@@ -2,10 +2,10 @@
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-serif">
+    <div className="min-h-screen w-full font-serif text-white overflow-x-hidden">
      
   {/* Navbar */}
-  <nav className="bg-white bg-opacity-80 backdrop-blur-sm text-[#2c1244] px-8 py-4 shadow-md fixed w-full z-50 flex justify-between items-center">
+  <nav className="bg-white bg-opacity-90 backdrop-blur-sm text-[#2c1244] px-8 py-4 shadow-md fixed w-full z-50 flex justify-between items-center">
 
   {/* Logo Left */}
   <div className="flex items-center gap-2">
@@ -14,11 +14,12 @@ function App() {
 
   {/* Center Nav Links */}
   <ul className="flex gap-12 text-lg font-medium">
-    <li><a href="#home" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2 ">Home</a></li>
-    <li><a href="#about" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2">About</a></li>
-    <li><a href="#projects" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2">Projects</a></li>
-    <li><a href="#contact" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2">Contact</a></li>
+    <li><a href="#home" className="hover-underline">//Home</a></li>
+    <li><a href="#about" className="hover-underline">//About</a></li>
+    <li><a href="#projects" className="hover-underline">//Projects</a></li>
+    <li><a href="#contact" className="hover-underline">//Contact</a></li>
   </ul>
+
 
   {/* Dark Mode Toggle (placeholder) */}
   <div className="ml-4">
@@ -27,23 +28,27 @@ function App() {
 </nav>
 
 
-{/* Hero Section */}
-<section
-  className="relative min-h-[100vh] bg-cover bg-center flex flex-col justify-center items-center text-center text-white px-6"
-  style={{ backgroundImage: "url('https://img.freepik.com/premium-vector/leaf-pattern-gray-background-vector_53876-166500.jpg?w=740')" }}
->
-  {/* Overlay */}
-  <div className="bg-black bg-opacity-40 absolute inset-0 z-0"></div>
+  {/* Hero Section */}
+  <section
+    id="home"
+    className="relative h-screen bg-fixed bg-center bg-cover flex flex-col justify-center items-center text-center text-white px-6"
+    style={{
+      backgroundImage: "#"
+    }}
+  >
+
+  {/* Overlay tint */}
+  <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
   {/* Hero Content */}
-  <div className="relative z-10">
-    <h1 className="text-5xl font-bold font-sans mb-4">Judith Jean-Francois</h1>
-    <p className="text-xl font-light max-w-xl">
+  <div className="relative z-10 max-w-2xl">
+    <h1 className="text-5xl font-bold font-heading mb-4">Judith Jean-François</h1>
+    <p className="text-xl font-light font-body mb-6">
       Front-End Developer crafting elegant, accessible, and joyful web experiences 💜
     </p>
     <a
       href="#projects"
-      className="mt-6 inline-block bg-[#7e61ae] hover:bg-[#a6a0dc] text-white py-2 px-6 rounded-full transition duration-300"
+      className="inline-block bg-accent1 hover:bg-[#a6a0dc] text-white py-2 px-6 rounded-full transition-all duration-300 shadow-md"
     >
       View My Work
     </a>
@@ -58,14 +63,16 @@ function App() {
 </section>
 
 
-    {/* Main Content */}
-    <main className="px-6 py-12 max-w-4xl mx-auto">
+  {/* Main Content */}
+  <main className="relative z-10 mx-auto max-w-7xl px-4 md:px-10 py-20">
 
-    {/* About Me */}
-    <section id="about" className="bg-[#dec8e2] text-[#2c1244] px-6 py-16">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold font-sans mb-6">About Me</h2>
-        <p className="text-lg font-serif leading-relaxed"> Hi there! I'm Judith Jean-Francois — a proud Haitian-American from the vibrant city of Naples, Florida. I'm a front-end developer with a creative soul, combining technology and art to build digital experiences that are both beautiful and meaningful.
+
+  {/* About Me */}
+   <section id="about" 
+    className="bg-dark/80 backdrop-blur-sm text-white px-6 py-16">
+    <div className="max-w-5xl mx-auto text-center animate-fadeInUp delay-[500ms]">
+      <h2 className="text-4xl font-bold font-heading mb-6">About Me</h2>
+      <p className="text-lg font-body leading-relaxed">Hi there! I'm Judith Jean-Francois — a proud Haitian-American from the vibrant city of Naples, Florida. I'm a front-end developer with a creative soul, combining technology and art to build digital experiences that are both beautiful and meaningful.
         <br /><br /> My journey into tech began with an A.S. degree in Digital Media/Multimedia Technology, where I originally pursued instructional design. But it was through this creative foundation that I found a deep love for development — turning ideas into responsive, accessible, and interactive experiences using code.
         <br /><br /> After completing a Front-End Development program with Computer Coach, I’ve built a versatile toolkit that includes HTML, CSS, JavaScript, React, and responsive design principles. I thrive on creating user-friendly interfaces and solving visual challenges with elegant solutions.
         <br /><br /> But my work is about more than just pixels and code. It’s about **empowerment** — creating accessible experiences for all users and encouraging others from underrepresented communities to break into tech. Every line of code is a step toward that mission.
@@ -74,7 +81,9 @@ function App() {
       </div>
     </section>
 
-    <section id="beyond" className="bg-[#f5f2f7] text-[#2c1244] px-6 py-16">
+
+    <section id="beyond" 
+    className="bg-[#1e1e1e] text-white px-6 py-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
       <div className="w-full md:w-1/3">
         <img
