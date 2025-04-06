@@ -27,3 +27,17 @@ html {
 .animate-scrollPulse {
   animation: scrollPulse 1.5s infinite;
 }
+
+.hover-underline::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #7e61ae;
+  transition: width 0.3s ease-in-out;
+  margin-top: 4px;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}

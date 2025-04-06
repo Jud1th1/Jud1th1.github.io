@@ -5,18 +5,19 @@ function App() {
     <div className="min-h-screen bg-white text-gray-900 font-serif">
      
   {/* Navbar */}
-  <nav className="bg-white text-[#2c1244] px-8 py-4 shadow-md fixed w-full z-50 flex justify-between items-center">
+  <nav className="bg-white bg-opacity-80 backdrop-blur-sm text-[#2c1244] px-8 py-4 shadow-md fixed w-full z-50 flex justify-between items-center">
+
   {/* Logo Left */}
   <div className="flex items-center gap-2">
-    <img src="/assets/logo.png" alt="Judith logo" className="h-8 w-auto" />
+    <img src="/assets/images/Logo.blk.png" alt="Judith logo" className="h-12 w-auto object-contain" />
   </div>
 
   {/* Center Nav Links */}
-  <ul className="flex gap-8 text-lg font-medium">
-    <li><a href="#home" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">Home</a></li>
-    <li><a href="#about" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">About</a></li>
-    <li><a href="#projects" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">Projects</a></li>
-    <li><a href="#contact" className="hover:underline underline-offset-8 decoration-[#7e61ae] decoration-2">Contact</a></li>
+  <ul className="flex gap-12 text-lg font-medium">
+    <li><a href="#home" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2 ">Home</a></li>
+    <li><a href="#about" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2">About</a></li>
+    <li><a href="#projects" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2">Projects</a></li>
+    <li><a href="#contact" className="hover-underline underline-offset-8 decoration-[#7e61ae] decoration-2">Contact</a></li>
   </ul>
 
   {/* Dark Mode Toggle (placeholder) */}
@@ -50,10 +51,10 @@ function App() {
 
   {/* 🖱️ Scroll Indicator */}
   <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
-    <div className="w-[28px] h-[48px] border-2 border-purple-300 shadow-[0_0_10px_#7e61ae] rounded-full flex justify-center items-start p-1 relative">
-      <div className="w-[4px] h-[8px] bg-white rounded-full animate-scrollPulse"></div>
-    </div>
+  <div className="w-[28px] h-[48px] border-2 border-purple-300 shadow-[0_0_10px_#7e61ae] rounded-full flex justify-center items-start p-1 relative">
+    <div className="w-[4px] h-[8px] bg-white rounded-full animate-scrollPulse"></div>
   </div>
+</div>
 </section>
 
 
