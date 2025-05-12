@@ -9,11 +9,14 @@ export default {
     theme: {
       extend: {
         colors: {
-          primary: "#2c1244",
-          accent1: "#7e61ae",
-          accent2: "#353e35",
-          neutral: "#dec8e2",
-          dark: "#1e1e1e",
+          primary: "#2c1244",       // Deep purple
+          accent1: "#7e61ae",       // Lavender purple
+          accent2: "#dec8e2",       // Pale lavender/neutral
+          neutral: "#f9f5f1",       // Soft cream background
+          dark: "#1e1e1e",          // Charcoal
+          sand: "#dbc5b0",          // Warm tan for contrast
+          blush: "#f2e4e9",         // Very soft pink
+          grape: "#4e306d",         // Rich supporting tone
         },
         fontFamily: {
           heading: ["Raleway", "sans-serif"],
@@ -21,6 +24,9 @@ export default {
         },
         boxShadow: {
           judith: '0 6px 12px rgba(126, 97, 174, 0.3)',
+        },
+        borderRadius: {
+        section: "2rem", // pill-like section dividers
         },
         keyframes: {
           pulseDot: {
