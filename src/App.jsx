@@ -71,7 +71,7 @@ function App() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
 
 
       {/* About Section */}
@@ -87,7 +87,7 @@ function App() {
           </p>
         </div>
       </div>
-    </section>
+      </section>
 
 
       {/* Skills Section */}
@@ -119,36 +119,111 @@ function App() {
         {/* Tools */}
         <div>
           <h3 className="text-2xl font-semibold mb-4">Tools & Workflows</h3>
-          <ul className="space-y-2">
-            <li>Git & GitHub</li>
-            <li>Figma</li>
-            <li>VS Code</li>
-            <li>Netlify / Vite / NPM</li>
-          </ul>
+            <ul className="space-y-2">
+              <li>Git & GitHub</li>
+              <li>Figma</li>
+              <li>VS Code</li>
+              <li>Netlify / Vite / NPM</li>
+            </ul>
         </div>
       </div>
     </div>
-</section>
+      </section>
 
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[#f5f2f7] text-dark px-6 py-20">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-4xl font-heading mb-6">Get in Touch</h2>
-          <p className="text-lg font-body mb-6">Have a project in mind or just want to say hi? I’d love to hear from you!</p>
-          <form action="https://formsubmit.co/jf.jud1th1@gmail.com" method="POST" className="grid gap-4 text-left">
-            <input type="text" name="name" required placeholder="Your Name" className="w-full p-3 rounded border border-accent1" />
-            <input type="email" name="email" required placeholder="Your Email" className="w-full p-3 rounded border border-accent1" />
-            <textarea name="message" rows="5" required placeholder="Your Message" className="w-full p-3 rounded border border-accent1"></textarea>
-            <button type="submit" className="bg-accent1 hover:bg-[#a6a0dc] text-white py-3 px-6 rounded transition">Send Message</button>
-          </form>
+      <section id="contact" className="bg-[#fdfaf6] text-primary px-6 py-20">
+  <div className="max-w-3xl mx-auto text-center">
+    <h2 className="text-4xl font-heading font-bold mb-6">Let’s Connect</h2>
+    <p className="text-lg font-body mb-10">
+      Have a project idea, job opportunity, or just want to say hi? Drop me a message — I’d love to hear from you.
+    </p>
+
+    <form
+      action="https://formsubmit.co/YOUR_EMAIL_HERE"
+      method="POST"
+      className="grid gap-6 text-left"
+    >
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Your Name"
+        className="w-full p-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent1"
+      />
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Your Email"
+        className="w-full p-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent1"
+      />
+      <textarea
+        name="message"
+        rows="5"
+        required
+        placeholder="Your Message"
+        className="w-full p-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent1"
+      ></textarea>
+      <button
+        type="submit"
+        className="bg-accent1 text-white font-medium py-3 px-6 rounded hover:bg-[#a6a0dc] transition duration-300"
+      >
+        Send Message
+      </button>
+    </form>
+
+    <div className="mt-12 flex justify-center gap-6 text-2xl text-accent1">
+    <a
+      href="https://github.com/yourusername"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-primary transition"
+      aria-label="GitHub"
+    >
+      <i className="fab fa-github"></i>
+    </a>
+    <a
+      href="https://linkedin.com/in/yourusername"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-primary transition"
+      aria-label="LinkedIn"
+    >
+      <i className="fab fa-linkedin"></i>
+    </a>
+    <a
+      href="mailto:your@email.com"
+      className="hover:text-primary transition"
+      aria-label="Email"
+    >
+      <i className="fas fa-envelope"></i>
+    </a>
+  </div>
+  </div>
+      </section>
+
+      {/* Slider/Recommendations*/}
+      <section id="testimonials" className="bg-[#c6bddc] text-primary px-6 py-16 text-center">
+        <h2 className="text-3xl font-heading font-bold mb-10">Kind Words</h2>
+        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <div className="bg-white text-dark shadow-md rounded-lg p-6 max-w-sm">
+            <p className="italic mb-4">“Judith is an absolute joy to work with — her attention to detail and empathy for users is unmatched.”</p>
+            <p className="font-bold">— Former Project Lead</p>
+          </div>
+          <div className="bg-white text-dark shadow-md rounded-lg p-6 max-w-sm hidden md:block">
+            <p className="italic mb-4">“Every project Judith touches becomes beautiful, accessible, and polished. A real gem!”</p>
+            <p className="font-bold">— Teammate</p>
+          </div>
         </div>
       </section>
 
+
       {/* Footer */}
-      <footer className="bg-[#2c1244] text-white text-center py-4">
-        <p>&copy; {new Date().getFullYear()} Judith Jean-Francois. All rights reserved.</p>
+      <footer className="bg-[#fdfdef] text-center text-sm text-dark py-6">
+        <p>&copy; {new Date().getFullYear()} Judith Jean-François</p>
       </footer>
+
     </div>
   );
 }
