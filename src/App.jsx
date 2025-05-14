@@ -19,6 +19,8 @@ function App() {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-[#A08B9D] to-[#D2B4AB] text-white pt-28">
         <h1 className="text-5xl md:text-6xl font-heading font-bold leading-tight mb-4">Hi, I'm Judith — Front-End Developer & Creative Technologist</h1>
+        <p className="text-white text-3xl animate-flashRed">TESTING!!!</p>
+
         <p className="text-xl font-body max-w-xl mx-auto mb-6">I build beautiful, accessible web experiences that blend code, creativity, and intention. Let’s create something meaningful together.</p>
       </section>
 
